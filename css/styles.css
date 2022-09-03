@@ -1,0 +1,103 @@
+:root {
+    --primary-text-color: #212121;
+    --secondary-tex-color: #757575;
+    --accent-color: #2196F3;
+    --white-tex-color: #ffffff;
+    --primary-bgc-color: #2F303A;
+    --secondary-bgc-color: #F5F4FA;
+
+}
+
+/* колір основного тексту - #212121 */
+/* дрюгорядний колір тексту - #757575 */
+/* акцент - #2196F3 */
+/* білий текст - #ffffff */
+/* бекграунд гіро + футер - #2F303A */
+/* дрюгорядний бекграунд - #F5F4FA */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-text-color);
+}
+
+.list {
+    list-style: none;
+}
+
+/* ШАПКА */
+
+.site-nav a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+.site-nav a:hover,
+.site-nav a:focus {
+    color: var(--accent-color);
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: #000000;
+}
+
+.part-logo {
+    color: var(--accent-color);
+}
+
+.contacts a {
+    text-decoration: none;
+    color: var(--secondary-tex-color);
+}
+.contacts a:hover,
+.contacts a:focus {
+    color: var(--accent-color);
+}
+
+/* HERO */
+.hero {
+    background-color: var(--primary-bgc-color);
+}
+.hero-title {
+    color: var(--white-tex-color);
+}
+
+/* features */
+.features-title {
+    color: var(--primary-text-color);
+}
+.features-description {
+    color: var(--secondary-tex-color);
+}
+
+/* Наша команда */
+.team {
+    background-color: var(--secondary-bgc-color)
+}
+/* .team-title {
+
+} */
+.team-member {
+    color: var(--primary-text-color);
+    font-weight: 500;
+}
+.team-position {
+    color: var(--secondary-tex-color);
+    font-weight: 400;
+}
+/* ФУТЕР */
+footer {
+    background-color: var(--primary-bgc-color);
+}
+footer .logo {
+    color: var(--white-tex-color);
+}
+.main-address {
+    color: var(--white-tex-color);
+    font-weight: 400;
+    text-decoration: none;
+}
+.main-address:hover,
+.main-address:focus {
+    color: var(--accent-color);
+}
