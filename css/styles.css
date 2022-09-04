@@ -99,7 +99,7 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
-.hero button {
+.hero .btn {
     background-color: var(--accent-color);
     color: var(--white-tex-color);
     font-weight: 700;
@@ -199,7 +199,7 @@ body {
 .filter {
     display: flex;
 }
-.filter button {
+.filter .btn {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -207,10 +207,14 @@ body {
     letter-spacing: 0.03em;
     cursor: pointer;
 }
-.filter button:hover,
-.filter button:focus {
+.filter .btn:hover,
+.filter .btn:focus {
     color: var(--white-tex-color);
     background-color: var(--accent-color);
+}
+.filter .current {
+    background-color: var(--accent-color);
+    color: var(--white-tex-color);
 }
 
 .project h2 {
