@@ -31,11 +31,13 @@ body {
     margin: -1px;
     border: 0;
     padding: 0;
-    
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+  }
+  .main {
+    background: #F5F5F5
   }
 
 /* ШАПКА */
@@ -46,7 +48,6 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    font-style: normal;
     font-weight: 500;
 }
 .site-nav a:hover,
@@ -68,16 +69,17 @@ body {
     color: var(--accent-color);
 }
 
-.contacts a {
+.contacts {
     text-decoration: none;
     color: var(--secondary-tex-color);
-    font-style: normal;
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    font-style: normal;
 }
-.contacts a:hover,
-.contacts a:focus {
+.contacts:hover,
+.contacts:focus {
     color: var(--accent-color);
 }
 
@@ -87,7 +89,6 @@ body {
 }
 .hero-title {
     color: var(--white-tex-color);
-    font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -98,7 +99,6 @@ body {
 .hero button {
     background-color: var(--accent-color);
     color: var(--white-tex-color);
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -108,43 +108,74 @@ body {
     letter-spacing: 0.06em;
     margin: 0 auto;
     display: block;
+    cursor: pointer;
 }
 
 /* features */
 .features .title {
-    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
 }
 .features .description {
     color: var(--secondary-tex-color);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
 /* Наша команда */
 .team {
     background-color: var(--secondary-bgc-color)
 }
-/* .team-title {
 
-} */
+.team-member, .team-position {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
 .team-member {
-    color: var(--primary-text-color);
+    font-weight: 500;
 }
 .team-position {
     color: var(--secondary-tex-color);
 }
+
+/* ЧИМ МИ ЗАЙМАЄМСЯ */
+
+.what-we-do {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
 /* ФУТЕР */
-footer {
+.footer {
     background-color: var(--primary-bgc-color);
 }
-footer .logo {
+.footer .logo {
     color: var(--white-tex-color);
 }
 .main-address {
     color: var(--white-tex-color);
     text-decoration: none;
-    font-style: normal;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+    font-style: normal;
 
 }
 .main-address:hover,
@@ -152,6 +183,14 @@ footer .logo {
     color: var(--accent-color);
 }
 
+.footer .contacts {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+}
+.footer .contacts:hover,
+.footer .contacts:focus {
+    color: var(--accent-color);
+}
 
 /* ПОРТФОЛІО */
 .filter {
@@ -163,8 +202,25 @@ footer .logo {
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
+    cursor: pointer;
 }
-.filter button:hover {
+.filter button:hover,
+.filter button:focus {
     color: var(--white-tex-color);
     background-color: var(--accent-color);
 }
+
+.project h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.project p {
+    color: var(--secondary-tex-color);
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
+
