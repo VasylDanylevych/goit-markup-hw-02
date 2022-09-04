@@ -42,7 +42,7 @@ body {
 
 /* ШАПКА */
 
-.site-nav a {
+.site-nav .link {
     text-decoration: none;
     color: var(--primary-text-color);
     font-size: 14px;
@@ -50,8 +50,11 @@ body {
     letter-spacing: 0.02em;
     font-weight: 500;
 }
-.site-nav a:hover,
-.site-nav a:focus {
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color);
+}
+.site-nav .current {
     color: var(--accent-color);
 }
 
