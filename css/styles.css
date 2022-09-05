@@ -176,6 +176,7 @@ body {
 .footer .contacts {
     color: var(--footer-contact-color);
     font-weight: 400;
+    line-height: 1.71;
 }
 .footer .contacts:hover,
 .footer .contacts:focus {
